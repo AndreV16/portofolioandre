@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+  <!-- Header Menu Di tengah -->
+  <header class="w-full shadow-lg lg:shadow-lg bg-white fixed">
+
+    <div class="lg:max-w-7xl lg:mx-auto lg:p-2 lg:flex lg:items-center lg:justify-between p-2 flex items-center justify-between flex-wrap">
+      <div class="lg:space-x-1 w-48  ">
+        <img src="../assets/logo 1.png" alt="" width="84px" height="14px">
+      </div>
+
+      <div
+        class="hidden font-poppins md:hidden lg:-ml-11 xl:flex xl:items-center lg:flex lg:items-center space-x-2  lg:text-sm ">
+        <a class=" space- lg:px-3 py-2 transition duration-500 border-b-2 border-transparent hover:border-eegyoColorPrimary "
+          href="">Beranda</a>
+        <a class=" lg:px-3 py-2  transition duration-500 border-b-2 border-transparent hover:border-eegyoColorPrimary"
+          href="">Tentang Saya</a>
+        <a class=" lg:px-3 py-2  transition duration-500 border-b-2 border-transparent hover:border-eegyoColorPrimary"
+          href="">Portofolio Design</a>
+        <a class=" lg:px-3 py-2  transition duration-500 border-b-2 border-transparent hover:border-eegyoColorPrimary"
+          href="">Clients</a>
+        <a class=" lg:px-3 py-2 transition duration-500 border-b-2 border-transparent hover:border-eegyoColorPrimary"
+          href="">Blog</a>
+      </div>
+
+
+      <div class="md:invisible lg:visible">
+        <a class="bg-eegyoColorPrimary py-3 px-5 lg:px-14 xl:px-14   text-black lg:text-xl text-base hover:bg-yellow-400 font-poppins"
+          href="">Login</a>
+      </div>
+      <button class="lg:hidden  mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+
+      </button>
+
+      <div class="mobile-menu bg-white w-full -ml-1  bg-pertama lg:hidden md:visible hidden   ">
+        <a class="block px-4 py-2 font-body font-semibold text-black rounded-sm hover:bg-eegyoColorPrimary" href="">Beranda</a>
+        <a class="block px-4 py-2 font-body font-semibold text-black rounded-sm hover:bg-eegyoColorPrimary" href="">Tentang Saya</a>
+        <a class="block px-4 py-2 font-body font-semibold text-black rounded-sm hover:bg-eegyoColorPrimary" href="">Portofolio Design</a>
+        <a class="block px-4 py-2 font-body font-semibold text-black rounded-sm hover:bg-eegyoColorPrimary" href="">Clients</a>
+        <a class="block px-4 py-2 font-body font-semibold text-black rounded-sm hover:bg-eegyoColorPrimary" href="https://kelas.eegyo.com/pelatihan">Blog</a>
+      </div>
+
+  </header>
+
+  <div id="SectionOne">
+    <div class=" mx-auto lg:max-w-7xl  lg:h-screen  lg:pt-32 lg:grid lg:grid-cols-2  grid-cols-1  ">
+
+      <div class="order-last pt-16 lg:pt-0">
+        <img class="" src="./assets/andre.png" alt="">
+      </div>
+
+      <div class="mt-16 lg:my-0">
+        <h2
+          class=" text-center text-2xl font-poppins font-bold lg:text-4xl  lg:mt-44 lg:font-poppins lg:font-bold lg:text-left lg:animate-bounce ">
+          Andre Virgi Hady
+        <h2
+          class=" text-center text-2xl font-poppins font-bold lg:text-2xl  lg:mt-1 lg:font-poppins lg:font-bold lg:text-left ">
+          Hello, Welcome To My Portofolio <span class="lg:animate-pulse text-eegyoColorSecondary"> UX/UI Profesional </span></h2>
+        <p class=" mx-3 mt-5 text-center lg:mx-0 lg:text-left lg:text-base  lg:mt-3 lg:mb-12 text-gray-700">
+          Pilihan Yang Tepat Anda Memilih Saya Dalam Menyelesaikan Masalah Design Product Anda, Saya Sudah Berpengalaman lebih Dari 5 Tahun
+        </p>
+        
+        <div class="my-9 flex justify-center  lg:mt-0 lg:justify-start">
+        <a class="bg-eegyoColorSecondary py-3 px-16 lg:px-14 lg:text-xl text-base text-white hover:bg-red-400 font-poppins" 
+        href="">Mari Berteman</a>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+  <script>
+    const btn = document.querySelector('button.mobile-menu-button');
+    const menu = document.querySelector('.mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    })
+  </script>
+
+</body>
+
+</html>
